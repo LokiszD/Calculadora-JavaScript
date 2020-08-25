@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Calculadora </title>
+</head>
+<script type="text/javascript">
+    function soma(){
+        var num1 = parseInt(document.dados.n1.value);
+        var num2 = parseInt(document.dados.n2.value);
+        var r = num1 + num2; 
+
+        document.dados.resp.value = r;
+    }
+    function subtrair(){
+        var num1 = parseInt(document.dados.n1.value);
+        var num2 = parseInt(document.dados.n2.value);
+        var r = num1 - num2; 
+
+        document.dados.resp.value = r;
+    }
+    function multiplicar(){
+        var num1 = parseInt(document.dados.n1.value);
+        var num2 = parseInt(document.dados.n2.value);
+        var r = num1 * num2; 
+
+        document.dados.resp.value = r;
+    }
+    function dividir(){
+        var num1 = parseInt(document.dados.n1.value);
+        var num2 = parseInt(document.dados.n2.value);
+        var r = num1 / num2; 
+
+        document.dados.resp.value = r;
+    }
+    function potencia(){
+        var num1 = parseInt(document.dados.n1.value);
+        var num2 = parseInt(document.dados.n2.value);
+        var r = Math.pow(num1, num2); 
+
+        document.dados.resp.value = r;
+    }
+</script>
+<body>
+    <form name = "dados">
+        <p>
+        Primeiro Numero:
+        <input type="text" name="n1" />
+        </p>
+        <p>
+        Segundo Numero:
+        <input type="text" name="n2" />
+        </p>
+        <p>
+        <input type="button" name="somar" value="SOMAR" onClick="soma()" />
+        </p>
+        <p>
+            <input type="button" name="somar" value="SUBTRACAO" onClick="subtrair()" />
+            </p>
+            <p>
+                <input type="button" name="somar" value="MULTIPLICACAO" onClick="multiplicar()" />
+                </p>
+                <p>
+                    <input type="button" name="somar" value="DIVISAO" onClick="dividir()" />
+                    </p>
+                    <p>
+                        <input type="button" name="somar" value="POTENCIA" onClick="potencia()" />
+                        </p>
+        <p>
+        Resposta:
+        <input type="text" name="resp" readonly />
+        </p>
+    </form>
+
+    
+    
+</body>
+</html>
